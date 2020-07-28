@@ -121,7 +121,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static/"),
-    os.path.join(BASE_DIR, "react-app/dist/"),
+    os.path.join(BASE_DIR, "svelte-app/dist/"),
 )
 
 # PWA configuration
@@ -151,7 +151,7 @@ PWA_APP_LANG = "en-US"
 
 WEBPACK_LOADER = {
     "DEFAULT": {
-        "BUNDLE_DIR_NAME": "dist/",
+        "BUNDLE_DIR_NAME": "",
         "STATS_FILE": os.path.join(BASE_DIR, "webpack-stats.json"),
     }
 }

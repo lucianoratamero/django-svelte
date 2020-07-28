@@ -13,18 +13,15 @@
   <meta name="description" content="Django + React + Webpack boilerplate used and made by Labcodes" />
   <title>Django React Webpack</title>
 
-  <!-- Webpack rendered CSS -->
-  {% render_bundle 'main' 'css' %}
-
   <!-- PWA metatags -->
   {% progressive_web_app_meta %}
 </head>
 
 <body>
   <noscript>This page requires javascript to run. Please, enable javascript.</noscript>
-  <div id="react-app"></div>
+  <div id="svelte-app"></div>
   <!-- Webpack rendered JS -->
-  {% render_bundle 'main' 'js' %}
+  {% render_bundle 'bundle' %}
 
 </body>
 
