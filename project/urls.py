@@ -27,7 +27,7 @@ def sample_api_view(request):
     return JsonResponse(
         {
             "message": """This message is coming from the backend.
-                      The django view is inside `project/urls.py` and the redux code is in `react-app/src/js/welcome/(actions|reducers).js`.
+                      The django view is inside `project/urls.py` and the store code is in `svelte-app/stores/welcomeMessage.store.ts`.
                       Please remove them when starting your project :]"""
         }
     )
