@@ -1,5 +1,7 @@
 # django-svelte
 
+![CI](https://github.com/lucianoratamero/django-svelte/workflows/CI/badge.svg)
+
 This is a template for django-svelte apps. For simplicity and better integration with django, we used the webpack version of svelte's template.
 
 It has typescript and sass enabled by default, together with integration with django's urls and static files handling.
