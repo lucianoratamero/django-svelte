@@ -36,3 +36,12 @@ You may want to:
 - start a new git repository;
 - add `nvm use` to the end of your `bin/activate` script, so that you're always using nvm whenever the virtualenv is active;
 - check `project/settings.py` for variables that need to be customized (PWA related, for example).
+
+## Powered by
+
+- Django: https://www.djangoproject.com/
+- Svelte: https://svelte.dev/
+- Typescript: https://www.typescriptlang.org/
+- SASS: https://sass-lang.com/
+- Webpack: https://webpack.js.org/
+- Workbox: https://developers.google.com/web/tools/workbox
