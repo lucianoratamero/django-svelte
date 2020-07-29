@@ -56,7 +56,7 @@ module.exports = {
     path: __dirname + "/svelte-app/dist",
     filename: "[name].js",
     chunkFilename: "[name].[id].js",
-    publicPath: prod ? "" : "http://localhost:3000/",
+    publicPath: prod ? "" : "http://localhost:8080/",
   },
   module: {
     rules: [
@@ -66,7 +66,7 @@ module.exports = {
           loader: "svelte-loader",
           options: {
             emitCss: true,
-            hotReload: false,
+            hotReload: true,
             preprocess: preprocess({
               scss: {
                 includePaths: ['src'],

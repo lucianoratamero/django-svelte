@@ -4,7 +4,7 @@ build_frontend:
 	npx yarn build
 
 run_frontend:
-	npx yarn start
+	npx yarn dev
 
 run_django:
 	python manage.py runserver
