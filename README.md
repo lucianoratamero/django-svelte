@@ -24,7 +24,7 @@ But if you're fine using NVM, just run `make install_dependencies`. It will do e
 
 Then, finally, copy the `env.example` file to a `.env` file and review the environment variables for better security.
 
-If everything went right, you should be able to use `make run` to have a server running at `localhost:8000`. Visit that on your browser to make sure everything is working <3
+If everything went right, you should be able to use `npm run dev` to have a server running at `localhost:8000`. Visit that on your browser to make sure everything is working <3
 
 
 ## Postinstall

@@ -1,16 +1,7 @@
-.PHONY: build_frontend run_frontend run_django run install_dependencies setup_node_environment
+.PHONY: build_frontend install_dependencies setup_node_environment
 
 build_frontend:
 	npx yarn build
-
-run_frontend:
-	npx yarn dev
-
-run_django:
-	python manage.py runserver
-
-run:
-	make -j2 run_django run_frontend
 
 install_dependencies:
 	make setup_node_environment
