@@ -45,5 +45,6 @@ You may want to:
 - Svelte: https://svelte.dev/
 - Typescript: https://www.typescriptlang.org/
 - SASS: https://sass-lang.com/
+- Cypress: https://www.cypress.io/
 - Webpack: https://webpack.js.org/
 - Workbox: https://developers.google.com/web/tools/workbox
