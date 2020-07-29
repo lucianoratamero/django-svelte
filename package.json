@@ -2,14 +2,22 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "devDependencies": {
+    "@tsconfig/svelte": "^1.0.3",
+    "autoprefixer": "^9.8.5",
     "compression-webpack-plugin": "^4.0.0",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
     "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.14.1",
     "serve": "^11.0.0",
     "style-loader": "^0.23.1",
     "svelte": "^3.0.0",
+    "svelte-check": "^0.1.0",
     "svelte-loader": "2.13.3",
+    "svelte-preprocess": "^4.0.8",
+    "ts-loader": "^8.0.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7",
     "uuid4": "^2.0.2",
     "webpack": "^4.30.0",
     "webpack-bundle-tracker": "^0.4.3",
@@ -19,7 +27,8 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --content-base svelte-app"
+    "dev": "webpack-dev-server --content-base svelte-app",
+    "validate": "svelte-check"
   },
   "dependencies": {
     "svelte-routing": "^1.4.2"

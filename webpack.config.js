@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BundleTracker = require("webpack-bundle-tracker");
 const workbox = require("workbox-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const preprocess = require('svelte-preprocess');
 const path = require("path");
 const uuid4 = require("uuid4");
 
@@ -42,13 +43,13 @@ if (prod) {
 
 module.exports = {
   entry: {
-    bundle: ["./svelte-app/main.js"],
+    bundle: ["./svelte-app/main.ts"],
   },
   resolve: {
     alias: {
       svelte: path.resolve("node_modules", "svelte"),
     },
-    extensions: [".mjs", ".js", ".svelte"],
+    extensions: [".mjs", ".js", ".svelte", "ts"],
     mainFields: ["svelte", "browser", "module", "main"],
   },
   output: {
@@ -66,9 +67,18 @@ module.exports = {
           options: {
             emitCss: true,
             hotReload: false,
+            preprocess: preprocess({
+              scss: {
+                includePaths: ['src'],
+              },
+              postcss: {
+                plugins: [require('autoprefixer')],
+              },
+            }),
           },
         },
       },
+      { test: /\.tsx?$/, loader: "ts-loader" },
       {
         test: /\.css$/,
         use: [

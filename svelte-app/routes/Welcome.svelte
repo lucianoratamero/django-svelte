@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import { Link } from "svelte-routing";
-  import welcomeMessage from "../stores/welcomeMessage.store";
+  import welcomeMessage from "../stores/welcomeMessage.store.ts";
   import { onMount } from "svelte";
 
   onMount(() => {

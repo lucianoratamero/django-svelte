@@ -1,9 +1,9 @@
 import { writable } from 'svelte/store';
 
 function createWelcomeMessageStore(){
-  const { subscribe, set } = writable();
+  const { subscribe, set } = writable(null);
 
-  const fetchMessage = () => {
+  function fetchMessage(): void {
     set(
       fetch('/api/sample-api-view/')
         .then(response => response.json())

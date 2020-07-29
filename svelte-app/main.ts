@@ -4,6 +4,4 @@ const app = new App({
 	target: document.querySelector('#svelte-app'),
 });
 
-window.app = app;
-
 export default app;
