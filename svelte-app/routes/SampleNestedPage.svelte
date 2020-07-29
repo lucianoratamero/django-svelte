@@ -15,10 +15,8 @@
     them both in sync.
   </p>
   <p>
-    To do that, for every route we create on the frontend (this one, for
-    example), we need to create a mirror on the backend. It points to the same
-    html as the index one. Please, take a look at your `urls.py` to see how
-    it&apos;s done. :D
+    To do that, django handles all requests, but all 404 cases are redirected to
+    the svelte app, so we can put a 404 message with the frontend.
   </p>
   <p>
     <Link to="/">Back to home.</Link>
