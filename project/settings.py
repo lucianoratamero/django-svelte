@@ -155,8 +155,3 @@ WEBPACK_LOADER = {
         "STATS_FILE": os.path.join(BASE_DIR, "webpack-stats.json"),
     }
 }
-
-# If you're not using this project on heroku, comment the following lines
-import django_heroku
-
-django_heroku.settings(locals())
