@@ -112,8 +112,6 @@ staticfiles/
 
 # Node
 node_modules
-package-lock.json
-yarn.lock
 
 # Webpack
 webpack-stats.json
